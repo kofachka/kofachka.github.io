@@ -47,6 +47,7 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -251,6 +252,10 @@ body {
     margin-right: 60px;
 }
 
+.event {
+    padding: 40px 0 150px;
+}
+
 .reserve {
     display: grid;
     grid-template-columns: 405px 1fr;
@@ -279,5 +284,21 @@ body {
 .reserve__legend {
     grid-area: "legend";
     background-color: fuchsia;
+}
+
+.home {
+    padding: 100px 0;
+                
+    &__listing {
+      margin-bottom: 95px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr;
+    grid-template-rows: 70px minmax(100px, auto);
+    grid-auto-rows: auto;
+    grid-gap: 30px 20px;
 }
 
