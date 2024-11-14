@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +9,6 @@
 </head>
 
 <body class="body">
-  <h1 id="title" class="page-title" style="color: green;"></h1>
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
@@ -34,11 +33,47 @@
     </div>
   </header>
   <main class="main">
+    <article class="event-card listing__event-card">
+      <a href="#" class="event-card__link">
+        <picture class="event-card__picture">
+          <img src="images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+        </picture>
 
+        <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+
+        <p class="event-card__description">
+          Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
+        </p>
+
+        <time datetime="2022-12-07T18:00" class="event-card__time">
+          07.12.2022 | начало 18.00
+        </time>
+      </a>
+
+    </article>
   </main>
   <footer class="page-footer">
 
   </footer>
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+        <form class="pp__form form">
+          <!-- Содержимое формы -->
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
