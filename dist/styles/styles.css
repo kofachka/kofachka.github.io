@@ -223,6 +223,12 @@ textarea {
   grid-area: "legend";
   background-color: fuchsia;
 }
+.events {
+  padding: 140px 0 100px;
+}
+.events__listing {
+  margin-bottom: 100px;
+}
 .page-header {
   position: fixed;
   top: 0;
