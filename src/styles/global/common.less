@@ -45,13 +45,38 @@ img {
 
 input,
 textarea,
+button,
 select {
   box-shadow: none;
   outline: none;
-  color: @black;
+  color: #1F1E1E;
   font-family: @font1;
+}
+
+button {
+  cursor: pointer;
 }
 
 textarea {
   resize: none;
+}
+
+input,
+textarea {
+  &::placeholder {
+   color: #6C6C6C;
+ }
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+   color: transparent
+ }
+}
+
+body {
+  padding: 10px;
+  background-color: #dedede;
+  font-family: @font1;
 }

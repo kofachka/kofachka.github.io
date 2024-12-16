@@ -60,6 +60,102 @@
 
           </article>
 
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/HowStuffWorks.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+
+              <p class="event-card__description">
+                Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.
+              </p>
+
+              <time datetime="2022-12-14T18:30" class="event-card__time">
+                14.12.2022 | начало 18.30
+              </time>
+            </a>
+
+          </article>
+
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/Sade.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+
+              <p class="event-card__description">
+                Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза,
+                ритм-блюза и фанка.
+              </p>
+
+              <time datetime="2022-12-16T20:00" class="event-card__time">
+                16.12.2022 | начало 20.00
+              </time>
+            </a>
+
+          </article>
+
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/малевич.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+
+              <p class="event-card__description">
+                Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.
+              </p>
+
+              <time datetime="2022-12-23T20:00" class="event-card__time">
+                23.12.2022 | начало 20.00
+              </time>
+            </a>
+
+          </article>
+
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/Tatler.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
+
+              <p class="event-card__description">
+                Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.
+              </p>
+
+              <time datetime="2022-12-25T13:00" class="event-card__time">
+                25.12.2022 | начало 13.00
+              </time>
+            </a>
+
+          </article>
+
+          <article class="event-card listing__event-card">
+            <a href="#" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/thehatters.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
+
+              <p class="event-card__description">
+                Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко
+              </p>
+
+              <time datetime="2022-12-27T10:00" class="event-card__time">
+                27.12.2022 | начало 10.00
+              </time>
+            </a>
+
+          </article>
+
         </div>
       </section>
 
@@ -68,10 +164,12 @@
   <footer class="page-footer">
 
   </footer>
+  <!DOCTYPE html>
+  <html lang="ru" class="show-event-popup">
   <div class="pp" id="eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn">
+        <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn">
           <svg class="x-btn__icon" width="12" height="12">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -82,11 +180,105 @@
           <br />и мы подберем площадку
         </h2>
         <form class="pp__form form">
-          <!-- Содержимое формы -->
+          <div class="form__list">
+
+          </div>
+          <span class="field__title">Формат мероприятия:</span>
+
+          <div class="radio">
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="seminar" />
+              <span class="radio__mark"></span>
+              <span class="radio__label">Мастер-класс/семинар</span>
+            </label>
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="concert" />
+              <span class="radio__mark"></span>
+              <span class="radio__label">Концерт/выступление</span>
+            </label>
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="show" />
+              <span class="radio__mark"></span>
+              <span class="radio__label">Выставка/показ</span>
+            </label>
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="other" />
+              <span class="radio__mark"></span>
+              <span class="radio__label">Другое</span>
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field__title">Планируемое количество посетителей:</span>
+
+            <select class="amount" class="field__select">
+              <option value="20">до 20 человек</option>
+              <option value="100">от 20 до 100 человек</option>
+              <option value="500">от 100 до 500 человек</option>
+              <option value="1000">более 500 человек</option>
+            </select>
+          </label>
+
+          <h6 class="field__title">Дата проведения:</h6>
+
+
+          <input class="field__date-input" type="text" placeholder="ДД" />
+          <input class="field__date-input" type="text" placeholder="ММ" />
+          <input class="field__date-input field__date-input--year" type="text" placeholder="ГГГГ" />
+
+          <h6 class="form__section-title">Контакные данные:</h6>
+
+          <label class="field">
+            <span class="field__label">Имя*</span>
+            <input class="field__input" type="text" placeholder="Имя" name="name" required />
+          </label>
+
+          <label class="field form__field form__field--w50">
+            <span class="field__label">Фамилия*</span>
+            <input class="field__input" type="text" placeholder="Фамилия" name="last_name" required />
+          </label>
+
+          <label class="field form__field form__field--w50">
+            <span class="field__label">Телефон*</span>
+            <input class="field__input" type="tel" placeholder="Телефон" name="phone" required />
+          </label>
+
+          <label class="field form__field form__field--w50">
+            <span class="field__label">Email *</span>
+            <input class="field__input" type="email" placeholder="Email" name="email" required />
+          </label>
+
+          <label class="field form__field">
+            <span class="field__title">Есть пожелания? Напишите&nbsp;нам:</span>
+            <textarea class="field__textarea" type="text" name="Пожелания"></textarea>
+          </label>
+
+
+          <label class="form__check check">
+            <input type="checkbox" name="agree" class="check__input" required checked />
+            <span class="check__mark"></span>
+            <span class="check__label check__label--s">
+              Я соглашаюсь с пользовательским соглашением и с политикой
+              использования персональных данных
+            </span>
+          </label>
+
+
+
+          <button type="submit" class="btn form__submit form__submit--w50">
+            Отправить
+          </button>
+
+          <button type="button" class="form__close-btn">
+            Закрыть
+          </button>
+
         </form>
       </div>
     </div>
   </div>
+
+  </html>
 </body>
 
 </html>

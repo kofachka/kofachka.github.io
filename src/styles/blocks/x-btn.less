@@ -1,0 +1,56 @@
+.x-btn {
+    display: flex;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: @black;
+    transition: background-color 0.2s;
+  
+    &:hover {
+      background-color: @red_dark;
+    }
+  
+    &__icon {
+      margin: auto;
+      color: @white;
+    }
+  }
+  
+  .check {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 24px;
+    padding-top: 2px;
+    padding-left: 24px;
+    color: @black;
+    cursor: pointer;
+  
+   
+    &__mark {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid @black;
+    }
+    &__label {
+      margin-left: 15px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      &--s {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+  

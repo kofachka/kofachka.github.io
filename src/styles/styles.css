@@ -43,6 +43,13 @@ body {
     z-index: 100;
 }
 
+@supports (backdrop-filter: blur(20px)) {
+    .page-header {
+      background-color: rgba(222, 222, 222, 0.5);
+      backdrop-filter: blur(20px);
+    }
+}
+
 .page-header__container {
     box-sizing: border-box;
     display: flex;
@@ -250,6 +257,7 @@ body {
 .listing__event-card {
     width: calc(33.3333% - 60px);
     margin-right: 60px;
+    margin: 0 30px 120px
 }
 
 .event {

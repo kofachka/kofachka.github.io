@@ -54,3 +54,10 @@
         width: 202px;
     }
 }
+
+@supports (backdrop-filter: blur(20px)) {
+    .page-header {
+      background-color: rgba(222, 222, 222, 0.5);
+      backdrop-filter: blur(20px);
+    }
+}

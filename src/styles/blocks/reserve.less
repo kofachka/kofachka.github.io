@@ -1,29 +1,78 @@
 .reserve {
     display: grid;
-    grid-template-columns: 405px 1fr;
-    grid-template-areas: 
-    "checkbox scheme"
-    "order legend";
+    grid-template-columns: 405px calc(89% - 405px);
+    grid-template-areas:
+        "checkbox scheme"
+        "order legend";
     gap: 65px 11%;
     width: 100%;
+
+    &__scheme-wrapper {
+        position: relative;
+        width: 100%;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 51.15384%;
+        }
+    }
+
+    &__scene {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__tickets {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__qty {
+        &::after {
+            content: " " attr(data-caption) " | " attr(data-price);
+        }
+    }
+
+    &__sum {
+        &::after {
+            content: attr(data-currency);
+            margin-left: 4px;
+            font-size: 0.95em;
+        }
+    }
+
+    &__total {
+        &::before {
+            content: attr(data-caption);
+            margin-right: 30px;
+        }
+
+        &::after {
+            content: attr(data-currency);
+            margin-left: 4px;
+            font-size: 0.95em;
+        }
+    }
 }
 
 .reserve__checkbox {
     grid-area: "checkbox";
-    background-color: red;
 }
 
 .reserve__scheme {
     grid-area: "scheme";
-    background-color: blue;
 }
 
 .reserve__order {
     grid-area: "order";
-    background-color: orange;
 }
 
 .reserve__legend {
     grid-area: "legend";
-    background-color: fuchsia;
 }
