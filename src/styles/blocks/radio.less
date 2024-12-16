@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
 
     &__item {
         box-sizing: border-box;
@@ -10,35 +9,16 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 15px;
         min-height: 23px;
         padding-left: 23px;
         color: @black;
         cursor: pointer;
-    }
 
-    &__input {
-        .is-hidden();
-
-        &:checked {
-            &~.check__mark {
-                background-color: @black;
-
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    left: 7px;
-                    top: 2px;
-                    width: 6px;
-                    height: 12px;
-                    border-bottom: 2px solid @white;
-                    border-right: 2px solid @white;
-                    transform: rotate(45deg);
-                }
-            }
+        &:last-child {
+            margin-bottom: 0;
         }
     }
-
 
     &__mark {
         box-sizing: border-box;
@@ -61,5 +41,15 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+    }
+
+    &__input {
+        .is-hidden();
+
+        &:checked {
+            &~.radio__mark {
+                background-color: @black;
+            }
+        }
     }
 }

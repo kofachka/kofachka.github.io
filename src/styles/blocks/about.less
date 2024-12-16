@@ -1,0 +1,34 @@
+.about {
+    padding-top: 500px;
+
+    &__container {
+        .container();
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 404px;
+        grid-template-areas:
+            "pic1 pic2"
+            "pic1 pic2"
+            "tittle pic2"
+            "text text";
+        gap: 50px 60px;
+    }
+
+    &__picture {
+        grid-area: pic1;
+    }
+
+    &__subtitle {
+        grid-area: title;
+    }
+
+    &__text {
+        grid-area: text;
+    }
+
+    &__picture2 {
+        grid-area: pic2;
+    }
+}
