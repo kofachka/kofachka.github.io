@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="ru">
-  @@include('blocks/head.html')
-  <body class="body">
-    @@include('blocks/page-header.html')
-    <main class="main">
-      <div class="home">
-        <!-- прочая разметка -->
-        <!-- prettier-ignore -->
-        @@include('blocks/blog-listing.html', {"class": "home__listing"})
-        <!-- прочая разметка -->
+<article class="article-card @@class">
+  <a href="#" class="article-card__link">
+    <picture class="article-card__picture">
+      <img src="@@img" alt="@@alt" class="article-card__img" />
+    </picture>
+  </a>
+  <div class="article-card__info">
+    <time datetime="@@datetime" class="article-card__time">@@time</time>
+    <a href="#" class="article-card__title-link">
+      <h4 class="article-card__title">@@title</h4>
+      <div class="article-card__arrow arrow">
+        <svg class="arrow__icon" width="92" height="62">
+          <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+        </svg>
       </div>
-    </main>
-    @@include('blocks/page-footer.html')
-  </body>
-</html>
+    </a>
+    <p class="article-card__description">@@descr</p>
+  </div>
+</article>

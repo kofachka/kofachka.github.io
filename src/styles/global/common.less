@@ -1,7 +1,8 @@
-html,body {
-    width: 100%; 
-    margin: 0;
-    padding: 0;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -22,21 +23,30 @@ body {
   line-height: 1.375;
   overflow-x: hidden;
   padding-top: 147px;
+
+  @media @bw1660 {
+    padding-top: 111px;
+  }
+
+  @media @bw768 {
+    padding-top: 70px;
+  }
+
 }
-  
+
 .main {
   flex: 1 0 auto;
 }
-  
+
 .page-footer {
   flex: 0 0 auto;
 }
-  
+
 a {
   color: #1F1E1E;
   outline: none;
 }
-  
+
 img {
   max-width: 100%;
   height: auto;
@@ -64,15 +74,15 @@ textarea {
 input,
 textarea {
   &::placeholder {
-   color: #6C6C6C;
- }
+    color: #6C6C6C;
+  }
 }
 
 input:focus,
 textarea:focus {
   &::placeholder {
-   color: transparent
- }
+    color: transparent
+  }
 }
 
 body {

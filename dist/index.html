@@ -25,10 +25,24 @@
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
+      <div class="page-header__nav-user">
+        <a href="#" class="page-header__nav-user-link">
+          Александр С.
+        </a>
+        <a href="#" class="page-header__nav-logout">
+          <svg class="page-header__nav-logout-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#door"></use>
+          </svg>
+        </a>
+      </div>
       <div class="page-header__right-block">
         <a href="#" class="btn page-header__user-btn">
           Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
         </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
@@ -177,6 +191,30 @@
       </section>
 
     </div>
+    <div class="home">
+      <!-- прочая разметка -->
+      <!-- prettier-ignore -->
+      <article class="article-card home__listing">
+        <a href="#" class="article-card__link">
+          <picture class="article-card__picture">
+            <img src="@@img" alt="@@alt" class="article-card__img" />
+          </picture>
+        </a>
+        <div class="article-card__info">
+          <time datetime="@@datetime" class="article-card__time">@@time</time>
+          <a href="#" class="article-card__title-link">
+            <h4 class="article-card__title">@@title</h4>
+            <div class="article-card__arrow arrow">
+              <svg class="arrow__icon" width="92" height="62">
+                <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+          <p class="article-card__description">@@descr</p>
+        </div>
+      </article>
+      <!-- прочая разметка -->
+    </div>
   </main>
   <footer class="page-footer">
 
@@ -306,6 +344,108 @@
   </div>
 
   </html>
+  <table class="events__tariffs-table  table">
+    <thead class="table__head">
+      <tr class="table__head-tr">
+        <th class="table__th"></th>
+        <th class="table__th">Тариф «Light»</th>
+        <th class="table__th">Тариф «Promo»</th>
+        <th class="table__th">Тариф «All stars»</th>
+      </tr>
+    </thead>
+    <tbody class="table__body">
+      <tr class="table__tr">
+        <th class="table__body-th">Стоимость за час</th>
+        <td class="table__td">1 000 ₽</td>
+        <td class="table__td">3 000 ₽</td>
+        <td class="table__td">3 000 ₽</td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Ведущий мероприятия</th>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Фотосъемка</th>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Видеосъемка</th>
+        <td class="table__td"></td>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Организация питания</th>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Декор</th>
+        <td class="table__td"></td>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Звуковое сопровождение</th>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__body-th">Дополнительное освещение</th>
+        <td class="table__td"></td>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+
+      <tr class="table__tr">
+        <th class="table__body-th">Клининг</th>
+        <td class="table__td"></td>
+        <td class="table__td"></td>
+        <td class="table__td">
+          <span class="ok"></span>
+        </td>
+      </tr>
+    </tbody>
+
+    <tfoot class="table__footer">
+      <tr class="table__footer-tr">
+        <th class="table__footer-th"></th>
+        <th class="table__footer-th">Тариф «Light»</th>
+        <th class="table__footer-th">Тариф «Promo»</th>
+        <th class="table__footer-th">Тариф «All stars»</th>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 
 </html>
